@@ -2,12 +2,16 @@ import React from "react";
 class Car extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { cars: props };
-    console.log(this.state);
   }
-
   render() {
-    return <div className="car-container">{this.props.data}</div>;
+    console.log(this.props);
+    return (
+      <div className="car-container">
+        <img src={this.props.data.url} alt="" />
+        <h3>{this.props.data.name}</h3>
+        <strong>Réalisé en {this.props.data.release_year}</strong>
+      </div>
+    );
   }
 }
 export default Car;
