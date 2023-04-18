@@ -1,19 +1,13 @@
-import React from 'react';
+import React from "react";
+class Car extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { cars: props };
+    console.log(this.state);
+  }
 
-const Car = ({ url, name, date }) => {
-  return (
-    <div style={
-      {
-        width: 200,
-        height: 300,
-        margin: 10
-      }}>
-      <img style={{ width: 200, height: 150 }}
-        src={url} alt="" />
-      <h4>{name}</h4>
-      <p>sorti en <strong>{date}</strong></p>
-    </div>
-  );
-};
-
+  render() {
+    return <div className="car-container">{this.props.data}</div>;
+  }
+}
 export default Car;

@@ -1,11 +1,6 @@
-import './App.css';
-import CarItems from './components/CarItems';
+import Car from "./components/Car";
 function App() {
-
-  return (
-    <CarItems />
-
-  );
+  return <Car data={"hamed"} />;
 }
 
 export default App;
