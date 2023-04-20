@@ -4,7 +4,6 @@ class Car extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props);
     return (
       <div className="car-container">
         <img src={this.props.data.url} alt="" />

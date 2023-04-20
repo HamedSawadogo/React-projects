@@ -5,9 +5,7 @@ class CartItems extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
-    console.log(this.props);
     return (
       <div className="cars">
         {this.props.data?.map((car, id) => (
@@ -17,5 +15,4 @@ class CartItems extends React.Component {
     );
   }
 }
-
 export default CartItems;
